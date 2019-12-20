@@ -1,0 +1,28 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package contato;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Marino
+ */
+public class Contato {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        ClasseAgenda objetoAgenda = new ClasseAgenda();
+        
+        objetoAgenda.adicionarnovocontato();
+        System.out.println(objetoAgenda.contatos());
+        objetoAgenda.excluircontato();
+        System.out.println(objetoAgenda.contatos());
+    }  
+}
